@@ -7,9 +7,11 @@ class Clock extends Component {
         setInterval(this.props.updateTime, 1000);
     }
     render(){
+        return(
         <div className="text-center mt-5">
-        <h1>Some text inside of it</h1>
+        <h1>{this.props.time}</h1>
         </div>
+        )
     }
 }
 

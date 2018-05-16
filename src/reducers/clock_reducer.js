@@ -1,13 +1,14 @@
-import types from '../actions/types';
-import React from 'react';
 
 const DEFAULT_STATE = {
     time: new Date().toLocaleTimeString()
 };
 
 export default (state= DEFAULT_STATE, action)=>{
+    // action={
+    //     type:'UPDATE_TIME'
+    // }
     switch(action.type){
-        case types.update_time:
+        case 'UPDATE_TIME':
             return{
                 time: new Date().toLocaleTimeString()
             }

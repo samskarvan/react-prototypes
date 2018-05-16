@@ -1,9 +1,8 @@
-import types from './types';
-import React from 'react';
 
 export function updateTime(){
     return{
-        type: types.update_time,
+        type: 'UPDATE_TIME',
         payload: new Date().toLocaleTimeString()
     }
 }
+
